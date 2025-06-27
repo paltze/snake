@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iraylib/include",
+      "-Iinclude",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/main.c"
+    ],
+    "directory": "/home/divyansh/code/raylib-test",
+    "file": "/home/divyansh/code/raylib-test/src/main.c",
+    "output": "/home/divyansh/code/raylib-test/game"
+  }
+]
