@@ -5,15 +5,158 @@
       "-c",
       "-Wall",
       "-std=c99",
+      "-Iinclude",
       "-Iraylib/include",
       "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/game.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/game.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/game/grid.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/game/grid.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/game/collision.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/game/collision.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/game/food.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/game/food.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/game/snake.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/game/snake.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
       "raylib/lib/libraylib.a",
       "-o",
       "game",
       "src/main.c"
     ],
-    "directory": "/home/divyansh/code/raylib-test",
-    "file": "/home/divyansh/code/raylib-test/src/main.c",
-    "output": "/home/divyansh/code/raylib-test/game"
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/main.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/ui/ui.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/ui/ui.c",
+    "output": "/home/divyansh/code/snake/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-Iraylib/include",
+      "-Iinclude",
+      "-Iinclude/game",
+      "-Iinclude/ui",
+      "raylib/lib/libraylib.a",
+      "-o",
+      "game",
+      "src/ui/button.c"
+    ],
+    "directory": "/home/divyansh/code/snake",
+    "file": "/home/divyansh/code/snake/src/ui/button.c",
+    "output": "/home/divyansh/code/snake/game"
   }
 ]

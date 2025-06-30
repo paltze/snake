@@ -5,12 +5,22 @@
 #include "snake.h"
 #include "collision.h"
 #include "food.h"
+#include "ui.h"
+
+enum State {
+    GAME,
+    MAIN_MENU,
+    PAUSE,
+    GAME_OVER
+};
 
 struct Game {
     struct Grid grid;
     struct SnakeState snakeState;
     struct World world;
     struct Food food;
+    struct UI ui;
+    enum State state;
     int score;
     int border;
     int screenWidth;
