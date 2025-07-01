@@ -2,7 +2,7 @@
 #include "button.h"
 
 void NewButton(struct Button *button, int centerX, int centerY, char *text, int fontSize) {
-    button->color = BROWN;
+    button->color = DARKBROWN;
     button->fontSize = fontSize;
     button->textWidth = MeasureText(text, fontSize);
     button->padding = button->textWidth / 5;
@@ -23,5 +23,5 @@ void UpdateButton(struct Button *button) {
 
 void DrawButton(struct Button *button) {
     DrawRectangleRec(button->bounds, button->color);
-    DrawText(button->text, button->bounds.x + button->padding, button->bounds.y + button->padding, button->fontSize, BLACK);
+    DrawText(button->text, button->bounds.x + button->padding, button->bounds.y + button->padding, button->fontSize, DARKGREEN);
 }

@@ -22,6 +22,14 @@ void GameInit(struct Game *game, int screenWidth, int screenHeight, int gridWidt
     game->state = MAIN_MENU;
 }
 
+void CleanGame(struct Game *game) {
+    game->snakeState = SnakeInit();
+    InitWorld(game);
+    FoodInit(game);
+
+    game->score = 0;
+}
+
 void GameUpdate(struct Game *game, float dt) {
     if (game->state == GAME) {
         CollisionTick(game);
@@ -32,17 +40,14 @@ void GameUpdate(struct Game *game, float dt) {
             game->score++;
         }
 
+        if (game->world.currentSnakeHeadCollision == SNAKE_BODY || game->world.currentSnakeHeadCollision == BOX) {
+            game->state = GAME_OVER;
+        }
+
         UpdateSnake(game, dt);
     }
-    else if(game->state == MAIN_MENU) {
-        UpdateMainMenu(game);
-    }
-    else if(game->state == PAUSE) {
-        UpdatePause(game);
-    }
-    else if (game->state == GAME_OVER) {
-        UpdateGameOver(game);
-    }
+
+    UpdateUI(game);
 }
 
 void GameDraw(struct Game *game) {
@@ -54,15 +59,7 @@ void GameDraw(struct Game *game) {
     if (game->state == GAME) {
         DrawSnake(game);
         DrawFood(game);
-        DrawText(TextFormat("Score: %d", game->score), 10, 10, 20, RAYWHITE);
     }
-    else if(game->state == MAIN_MENU) {
-        DrawMainMenu(game);
-    }
-    else if(game->state == PAUSE) {
-        DrawPause(game);
-    }
-    else if (game->state == GAME_OVER) {
-        DrawGameOver(game);
-    }
+
+    DrawUI(game);
 }

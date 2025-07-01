@@ -28,6 +28,7 @@ struct Game {
 };
 
 void GameInit(struct Game *game, int screenWidth, int screenHeight, int gridWidth, int border);
+void CleanGame(struct Game *game);
 void GameUpdate(struct Game *game, float dt);
 void GameDraw(struct Game *game);
 
